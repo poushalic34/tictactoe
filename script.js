@@ -49,9 +49,8 @@ const checkDraw = () => {
             [2, 4, 6, 5, 15, 135],
         ]
         ch.forEach(e => {
-            if ((boxtextt[e[k]].innerText === '')) {
+            if ((boxtextt[e[0]].innerText === '') || (boxtextt[e[1]].innerText === '') || (boxtextt[e[2]].innerText === '')) {
                 c = 1;
-                k = k + 1;
             }
         })
         if (c === 0) {
